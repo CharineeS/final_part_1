@@ -12,6 +12,7 @@ $ git push –u origin <feature1>
 4.	ก่อนที่จะทำการ merge code นั้นคุณควรที่ทำให้มั่นใจก่อนว่า codeใน feature branchมันจะไม่เกิด conflict กับcode ใน develop branchดังนั้น ถ้าเกิด conflict ขึ้นมา ควรทำการแก้ไขใน feature branch คุณก่อนด้วยการ rebase จากนั้นจึงทำการ merge กลับไปยัง develop branchหลังจากนั้น ก็ลบ feature branch ทิ้ง
 
 5.	จงแสดงผลลัพธ์ที่ได้จากการรันโปรแกรม Ruby 
+bash: syntax error near unexpected token `.each'
 
 6.	จงวิจารย์คำกล่าวอ้างต่อไปนี้
 การทำ web application เป็นการแบ่งปันกันใช้ web application ร่วมกันกับผู้อื่นแต่ถ้าเอาใส่แผ่น CD มาลงในเครื่องส่วนตัวก็ใช้ได้แค่คนเดียว
@@ -28,8 +29,8 @@ $ git push –u origin <feature1>
 Rails เป็น Web Framework มีลักษณะเป็น MVC (Model-View-Controller) พัฒนาโดย 37signals
 Rails ถูกออกแบบมาให้มีการใช้งานที่ง่ายและรวดเร็ว ลดปัญหางานทีี่ต้องทำซ้ำๆ ทำให้ได้ productivity ที่สูงขึ้น สอดคล้องกับ Methodology แบบ Ajile ส่วน framework หรือ โครงร่างซอฟต์แวร์ เป็นขอบเขตของระบบงาน ที่เป็นรูปแบบที่นำกลับมาใช้ใหม่ได้สำหรับระบบซอฟต์แวร์ (หรือระบบย่อย) ซึ่งสามารถอยู่ในรูปของคลาสนามธรรม (Abstract class) และกับวิธีในการใช้ตัวตน (instance) ของคลาสร่วมกันจำเพาะสำหรับซอฟต์แวร์ชนิดใดชนิดหนึ่ง โครงร่างซอฟต์แวร์ทุกโครงร่างใช้การออกแบบเชิงวัตถุ(Object-oriented programming, OOP) 
 ข้อดี/ข้อเสีย
--	Rails ไม่สามารถทำงานบน Windows ได้
--	การติ้งตั้ง Rails ยุ่งยากกว่าเครื่องมืออื่นๆ
+•	Rails ไม่สามารถทำงานบน Windows ได้
+•	การติ้งตั้ง Rails ยุ่งยากกว่าเครื่องมืออื่นๆ
 
 9.	Heroku คืออะไรและมีบทบาทกับการพัฒนา web application ของเราอย่างไร
 Heroku เป็น Platform as a Service (Paas) ที่ให้เราใช้งานได้ฟรี (มีแบบเสียเงินด้วย) โดยรองรับภาษาโปรแกรมที่หลากหลาย เช่น Ruby, PHP, Node.js, Python, Java, Clojure, Scala และยังสามารถสร้าง buildpack สำหรับภาษาอื่นๆได้
